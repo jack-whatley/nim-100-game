@@ -5,11 +5,19 @@ import Player from './player';
 
 let players: Player[] = [];
 const firstPlayer: number = Math.floor(Math.random() * 3);
+let gameWon: boolean = false;
+let roundNum: number = 1;
 
 const createPlayer = (b: number) => {
 
     let playerName: string = prompt(`Enter your name player ${b + 1}: `);
     players.push(new Player(playerName, 0, false));
+
+}
+
+const takeTurn = (a: number, b: Player[]) => {
+
+    
 
 }
 
@@ -24,4 +32,20 @@ for (let i = 0; i < 2; i++) {
 
 // console.log(players);
 
-console.log(`The player going first is: ${players[firstPlayer].name}.`);
+while (gameWon === false) {
+
+    console.log(`\nRound number ${roundNum}: `);
+    
+    for (let i = 0; i < players.length; i++) {
+
+        
+
+    }
+
+    
+
+    roundNum++;
+
+}
+
+console.log(players);

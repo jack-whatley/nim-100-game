@@ -9,6 +9,9 @@ class Player {
     addNumber(a) {
         this.number += a;
     }
+    printNumber() {
+        console.log(`${this.name} has: ${this.number}.`);
+    }
     checkWin() {
         if (this.number === 100) {
             this.won = true;
