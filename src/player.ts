@@ -10,6 +10,16 @@ class Player {
 
     }
 
+    checkWin(a: number) {
+
+        if (a === 100) {
+
+            this.won = true;
+
+        }
+
+    }
+
 }
 
 export default Player;
