@@ -4,6 +4,7 @@ const prompt = PromptSync();
 import Player from './player';
 
 let players: Player[] = [];
+const firstPlayer: number = Math.floor(Math.random() * 3);
 
 const createPlayer = (b: number) => {
 
@@ -21,4 +22,6 @@ for (let i = 0; i < 2; i++) {
 
 }
 
-console.log(players);
+// console.log(players);
+
+console.log(`The player going first is: ${players[firstPlayer].name}.`);
